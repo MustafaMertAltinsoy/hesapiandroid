@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KisiyiDuzenleActivity">
+
+    <Toolbar
+        android:id="@+id/kisiEkleToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/arkaplan"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Kişi Düzenle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="geriDon"
+            android:background="@drawable/image_back" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/kisilerScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kisiEkleToolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/scrollViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/kisiekleinputs">
+
+                <ImageButton
+                    android:id="@+id/adSoyadImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_user" />
+
+                <TextView
+                    android:id="@+id/AdSoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/adSoyadImage"
+                    android:text="* Ad Soyad"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/adSoyadInputEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AdSoyad"
+                    android:layout_toRightOf="@id/adSoyadImage"
+                    android:hint="@string/duzenleDokun"
+                    android:maxLength="31"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <!-- <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:background="@drawable/kisiekleinputs">
+
+                 <ImageButton
+                     android:id="@+id/firmaImage"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="10dp"
+                     android:background="@null"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/image_user" />
+
+                 <TextView
+                     android:id="@+id/firma"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_toRightOf="@id/firmaImage"
+                     android:text="Firma"
+                     android:textColor="@color/black"
+                     android:textSize="20sp"
+                     android:textStyle="bold" />
+
+                 <EditText
+                     android:id="@+id/firmaInput"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/firma"
+                     android:layout_toRightOf="@id/firmaImage"
+                     android:hint="@string/duzenleDokun"
+                     android:text="" />
+
+             </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/kisiekleinputs">
+
+                <ImageButton
+                    android:id="@+id/telefonImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_telefon" />
+
+                <TextView
+                    android:id="@+id/telefon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/telefonImage"
+                    android:text="Telefon"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/telefonInputEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telefon"
+                    android:layout_toRightOf="@id/telefonImage"
+                    android:hint="@string/duzenleDokun"
+                    android:maxLength="31"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/kisiekleinputs">
+
+                <ImageButton
+                    android:id="@+id/notImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_note" />
+
+                <TextView
+                    android:id="@+id/not"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/notImage"
+                    android:text="Not"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/notInputEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/not"
+                    android:layout_toRightOf="@id/notImage"
+                    android:hint="@string/duzenleDokun"
+                    android:maxLength="31"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/eklebg"
+                android:onClick="musteriEkle"
+                android:text="Düzenle"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

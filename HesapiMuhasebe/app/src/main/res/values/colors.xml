@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#3E3E3E</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00B812</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0048FF</color>
+    <color name="arkaplan">#F1F1F1</color>
+    <color name="arkaplanToolbar">#FFFFFF</color>
+    <color name="darkArkaplan">#7A7A7A</color>
+    <color name="inputBg">#C9C9C9</color>
+    <color name="musteriBg">#E6E6E6</color>
+    <color name="musteriEkleBg">#ECECEC</color>
+    <color name="musteriEkleBtnBg">#0E52FF</color>
+    <color name="nothing">#00FFFFFF</color>
+</resources>
